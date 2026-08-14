@@ -1,6 +1,6 @@
 {
   "name": "dsh-usage-dash",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "DSH web plugin: coding-plan quota dashboard (OpenCode Go / Codex / Volcengine CodingPlan) shown as a sidebar footer badge with an overlay card.",
   "type": "module",
   "main": "lib/index.js",

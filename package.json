@@ -1,10 +1,28 @@
 {
   "name": "dsh-usage-dash",
   "version": "0.1.0",
-  "description": "DSH web plugin: coding-plan quota dashboard (OpenCode Go 5h/weekly/monthly) shown as a sidebar footer badge with an overlay card.",
+  "description": "DSH web plugin: coding-plan quota dashboard (OpenCode Go / Codex / Volcengine CodingPlan) shown as a sidebar footer badge with an overlay card.",
   "type": "module",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
+  "files": [
+    "lib",
+    "cordis.patch.yml"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yanzoro926/dsh-usage-dash.git"
+  },
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "plugin",
+    "usage",
+    "quota",
+    "opencode",
+    "codex",
+    "volcengine"
+  ],
   "exports": {
     ".": {
       "types": "./lib/index.d.ts",

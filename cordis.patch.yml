@@ -1,0 +1,12 @@
+# dsh-usage-dash bundle patch
+#
+# Same mount channel as dsh-better-sidebar: installed via
+#
+#   dsh plugin --profile web add file:/path/to/dsh-usage-dash
+#
+# the command reconciles dsh.profile.bundles against installed packages and,
+# seeing this declaration, appends `dsh-usage-dash` to the bundle stack.
+# No manual profile edits needed.
+- insert:
+    - id: usage-dash
+      name: 'dsh-usage-dash'

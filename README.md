@@ -22,7 +22,7 @@ session: 88%   wk: 70%   30d: 45%
 | 提供方 | 数据源 | 窗口 | 需要配置 |
 |--------|--------|------|----------|
 | OpenCode Go | 官方 API `GET https://opencode.ai/zen/go/v1/usage`（优先），fallback 本机 `opencode.db` 本地估算 | 5h / 周 / 月 | 无需（自动用 `~/.local/share/opencode/auth.json` 的 Go key），可在设置里覆盖 token |
-| 火山引擎 CodingPlan | 官方 OpenAPI `GetCodingPlanUsage`（通过 `arkcli usage plan`） | session / 周 / 月 | 需安装 [arkcli](https://github.com/volcengine/ark-cli) 并登录：`npm i @volcengine/ark-cli -g` → `arkcli auth login volc-sso` |
+| 火山引擎 CodingPlan | 官方 OpenAPI `GetCodingPlanUsage`（通过 `arkcli usage plan`） | session / 周 / 月 | 推荐认证：`npm i -g @volcengine/cli` → `ve login` → `arkcli auth login`（ve 借登录态，STS 自动续期防互锁）；兜底 `npm i @volcengine/ark-cli -g` → `arkcli auth login volc-sso` |
 | DeepSeek 官方 API | 官方余额 API `GET https://api.deepseek.com/user/balance`（与 platform.deepseek.com/usage 同源） | 余额（总/赠送/充值） | 在设置里填 DeepSeek API key（platform.deepseek.com/api_keys 创建） |
 | 自定义套餐 | 任意返回标准 JSON 的额度 API（见下方契约） | 任意 | 在设置里填名称 / URL / 可选 token |
 
